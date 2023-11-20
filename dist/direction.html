@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Азимут</title>
+    <link href="css/app.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- класс header--grey для серого хедера-->
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="#" class="header-logo">
+                <img src="images/dist/logo_azimut.png" alt="logo">
+                <div class="logo-title">
+                    <div class="logo-title__text">Азимут</div>
+                    <div class="logo-title__descr">Траспортная компания</div>
+                </div>
+            </a>
+            <div class="header-menu">
+                <div class="nav-full__item">
+                    <select class="select">
+                        <option value="moscow">Набережные Челны</option>
+                        <option value="saint-petersburg">Санкт-Петербург</option>
+                        <option value="novosibirsk">Новосибирск</option>
+                        <option value="ekaterinburg">Екатеринбург</option>
+                    </select>
+                </div>
+                <div class="nav-full__item">
+                    <a class="nav-full__link" href="">О компании</a>
+                    <a class="nav-full__link" href="">Документы</a>
+                    <a class="nav-full__link" href="">Филиалы</a>
+                    <a class="nav-full__link" href="">Перевозки</a>
+                    <a class="nav-full__link" href="">Направления</a>
+                    <a class="nav-full__link" href="">Сопутствующие услуги</a>
+                </div>
+                <div class="header-contacts__mobile">
+                    <a class="header-contacts__phone" href="tel:+78552783288">+7 855 278-32-88</a>
+                    <a class="header-contacts__phone" href="tel:+79276776880">+7 927 677-68-80</a>
+                </div>
+            </div>
+            <div class="nav-full__toggle js-nav-full__toggle">
+                <div class="nav-full__toggle-line"></div>
+                <div class="nav-full__toggle-line"></div>
+                <div class="nav-full__toggle-line"></div>
+            </div>
+            <div class="nav-full js-nav-full">
+                <div class="nav-full__inner">
+                    <div class="nav-full__list">
+                        <div class="nav-full__item">
+                            <select class="nav-full__select select">
+                                <option value="moscow">Набережные Челны</option>
+                                <option value="saint-petersburg">Санкт-Петербург</option>
+                                <option value="novosibirsk">Новосибирск</option>
+                                <option value="ekaterinburg">Екатеринбург</option>
+                            </select>
+                        </div>
+                        <div class="nav-full__item">
+                            <a class="nav-full__link" href="">О компании</a>
+                            <a class="nav-full__link" href="">Документы</a>
+                            <a class="nav-full__link" href="">Филиалы</a>
+                            <a class="nav-full__link" href="">Перевозки</a>
+                            <a class="nav-full__link" href="">Направления</a>
+                            <a class="nav-full__link" href="">Сопутствующие услуги</a>
+                        </div>
+                        <div class="header-contacts__mobile">
+                            <a class="header-contacts__phone" href="tel:+78552783288">+7 855 278-32-88</a>
+                            <a class="header-contacts__phone" href="tel:+79276776880">+7 927 677-68-80</a>
+                        </div>
+                        <div class="delivery-buttons">
+                            <button class="button delivery-buttons__button">
+                                <span class="button__icon">
+                                    <svg class="">
+                                        <use xlink:href="images/dist/sprite.svg#letter"></use>
+                                    </svg>
+                                </span>
+                                Оформить заказ
+                            </button>
+                            <a class="button delivery-buttons__button" href="#modal-order" data-toggle="modal">
+                                <span class="button__icon">
+                                    <svg class="">
+                                        <use xlink:href="images/dist/sprite.svg#message"></use>
+                                    </svg>
+                                </span>
+                                Есть вопрос?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-wrap">
+                        <ul class="breadcrumbs-inner">
+                            <li class="breadcrumbs-inner__item">
+                                <a href="/" class="breadcrumbs-inner__link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="breadcrumbs-inner__item">
+                                <a href="/" class="breadcrumbs-inner__link">
+                                    О компании
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="delivery-buttons">
+                            <button class="button delivery-buttons__button">
+                                <span class="button__icon">
+                                    <svg class="">
+                                        <use xlink:href="images/dist/sprite.svg#letter"></use>
+                                    </svg>
+                                </span>
+                                Оформить заказ
+                            </button>
+                            <a class="button delivery-buttons__button" href="#modal-order" data-toggle="modal">
+                                <span class="button__icon">
+                                    <svg class="">
+                                        <use xlink:href="images/dist/sprite.svg#message"></use>
+                                    </svg>
+                                </span>
+                                Есть вопрос?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section-direction padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center flex-column section-direction__text">
+                <h2 class="section-direction__title title-margin">Грузоперевозки из Набережных Челнов в Абакан</h2>
+                <p>Транспортная компания «Быстрая логистика» уже больше 6 лет оказывает услуги по перевозке грузов из
+                    Набережных Челнов в Абакан.</p>
+                <span>Работаем по всей России и международным направлениям (Китай, страны СНГ, Европа), доставляя грузы
+                    массой от 100 кг до 60 тонн (возможна доставка грузов большего веса при получении спецразрешения).
+                    Гарантируем сохранность имущества при перевозке и соблюдение сроков доставки. У нас доступные цены —
+                    сравните сами!</span>
+            </div>
+            <div class="col-12 d-flex d-lg-none justify-content-center flex-column">
+                <img class="section__bg-img" src="images/dist/direction/direction-bg-truck.png" srcset="images/dist/direction/direction-bg-truck.png 1x, images/dist/direction/direction-bg-truck2.png 2x" alt="Грузовик">
+                </picture>
+            </div>
+            <div class="col-12">
+                <form class="form section-combined__form">
+    <div>
+        <div class="form__title">Калькулятор грузоперевозки</div>
+        <div class="form__subtitle">Для расчета стоимости и срока перевозки укажите параметры</div>
+    </div>
+    <div class="form-search">
+        <input type="text" name="" placeholder="Откуда" class="form-search__input form__input">
+        <button class="form-search__btn form__btn">
+            <span class="form__btn-icon">
+                <svg class="">
+                    <use xlink:href="images/dist/sprite.svg#arrow"></use>
+                </svg>
+            </span>
+        </button>
+        <input type="text" name="" placeholder="Куда" class="form-search__input form__input">
+    </div>
+</form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-table padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table class="direction-table" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr></tr>
+                        <tr class="direction-table__title">
+                            <th>Тип</th>
+                            <th>Вес и габариты</th>
+                            <th>Стоимость</th>
+                            <th>Срок доставки</th>
+                        </tr>
+                        <tr>
+                            <td class="direction-table__info" rowspan="4">Перевозка <br> сборным <br> грузом</td>
+                            <td>100 кг 2м<sup>3</sup></td>
+                            <td>≈ 19 999 ₽</td>
+                            <td>11 дней</td>
+                            <td>
+                                <button class="button direction-table__button">Заказать перевозку</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>200 кг 2м<sup>3</sup></td>
+                            <td>≈ 19 999 ₽</td>
+                            <td>11 дней</td>
+                            <td>
+                                <button class="button direction-table__button">Заказать перевозку</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>300 кг 2м<sup>3</sup></td>
+                            <td>≈ 19 999 ₽</td>
+                            <td>11 дней</td>
+                            <td>
+                                <button class="button direction-table__button">Заказать перевозку</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>500 кг 2м<sup>3</sup></td>
+                            <td>≈ 19 999 ₽</td>
+                            <td>11 дней</td>
+                            <td>
+                                <button class="button direction-table__button">Заказать перевозку</button>
+                            </td>
+                        </tr>
+                        <tr class="direction-table__margin"></tr>
+                        <tr>
+                            <td class="direction-table__info" rowspan="3">Перевозка <br> Газелью</td>
+                            <td>100 кг 2м<sup>3</sup></td>
+                            <td>≈ 19 999 ₽</td>
+                            <td>11 дней</td>
+                            <td>
+                                <button class="button direction-table__button">Заказать перевозку</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>200 кг 2м<sup>3</sup></td>
+                            <td>≈ 19 999 ₽</td>
+                            <td>11 дней</td>
+                            <td>
+                                <button class="button direction-table__button">Заказать перевозку</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>300 кг 2м<sup>3</sup></td>
+                            <td>≈ 19 999 ₽</td>
+                            <td>11 дней</td>
+                            <td>
+                                <button class="button direction-table__button">Заказать перевозку</button>
+                            </td>
+                        </tr>
+                        <tr class="direction-table__margin"></tr>
+                        <tr>
+                            <td class="direction-table__info" rowspan="5">Перевозка <br> фурой</td>
+                            <td>100 кг 2м<sup>3</sup></td>
+                            <td>≈ 19 999 ₽</td>
+                            <td>11 дней</td>
+                            <td>
+                                <button class="button direction-table__button">Заказать перевозку</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>200 кг 2м<sup>3</sup></td>
+                            <td>≈ 19 999 ₽</td>
+                            <td>11 дней</td>
+                            <td>
+                                <button class="button direction-table__button">Заказать перевозку</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>300 кг 2м<sup>3</sup></td>
+                            <td>≈ 19 999 ₽</td>
+                            <td>11 дней</td>
+                            <td>
+                                <button class="button direction-table__button">Заказать перевозку</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>300 кг 2м<sup>3</sup></td>
+                            <td>≈ 19 999 ₽</td>
+                            <td>11 дней</td>
+                            <td>
+                                <button class="button direction-table__button">Заказать перевозку</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-how-work padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-how-work__title title-margin">
+                    Как мы работаем
+                </h2>
+                <div class="how-work">
+    <div class="how-work-item">
+        <div class="how-work-item__text">Принимаем от вас заявку на перевозку</div>
+        <div class="how-work-item__hidden">
+            <div class="how-work-item__num">01</div>
+        </div>
+    </div>
+    <div class="how-work-item">
+        <div class="how-work-item__text">Рассчитываем стоимость доставки и составляем предложение</div>
+        <div class="how-work-item__hidden">
+            <div class="how-work-item__num">02</div>
+        </div>
+    </div>
+    <div class="how-work-item">
+        <div class="how-work-item__text">Заключаем договор</div>
+        <div class="how-work-item__hidden">
+            <div class="how-work-item__num">03</div>
+        </div>
+    </div>
+    <div class="how-work-item">
+        <div class="how-work-item__text">Доставляем груз в пункт назначения</div>
+        <div class="how-work-item__hidden">
+            <div class="how-work-item__num">04</div>
+        </div>
+    </div>
+    <div class="how-work-item">
+        <div class="how-work-item__text">Получаем оплату по договору</div>
+        <div class="how-work-item__hidden">
+            <div class="how-work-item__num">05</div>
+        </div>
+    </div>
+    <div class="how-work-item">
+        <div class="how-work-item__text">Вы получаете груз</div>
+        <div class="how-work-item__hidden">
+            <div class="how-work-item__num">06</div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-scheme">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-scheme__title title-margin">Перевозка грузов из Набережных <br>Челнов в Абакан</h2>
+            </div>
+            <div class="col-12 col-lg-5">
+                <p>Грузоперевозки из Набережных Челнов в Абакан пользуется спросом у организаций среднего бизнеса,
+                    ритейловых и крупных компаний. Услуга заключается в заполнении ТС небольшими партиями продукции
+                    разных отправителей для доставки автомобильным транспортом в одном направлении.</p>
+            </div>
+            <div class="col-12 col-lg-5">
+                <p>Клиенту не придется долго ждать, чтобы отправить груз в Абакан — заполнение грузовой машины
+                    происходит быстро. Стоимость доставки делится между отправителями, что помогает клиенту экономить
+                    на расходах.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-possibility padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-possibility__title title-margin">Наши услуги</h2>
+                <div class="possibility-content">
+                    <div class="possibility-content-wrap">
+                        <div class="possibility-content__title">Квартирный переезд по России</div>
+                        <img src="images/dist/direction/loader.png" alt="Грузчик" class="possibility-content__img">
+                    </div>
+                    <div class="possibility-content-wrap">
+                        <div class="possibility-content__title">Контейнерная перевозка грузов</div>
+                        <img src="images/dist/direction/marine.png" alt="Контейнер" class="possibility-content__img">
+                    </div>
+                    <div class="possibility-content-wrap">
+                        <div class="possibility-content__title">Рефрижераторные перевозки</div>
+                        <img src="images/dist/direction/refrigerator.png" alt="Рефрижератор" class="possibility-content__img">
+                    </div>
+                    <div class="possibility-content-wrap">
+                        <div class="possibility-content__title">Офисные переезды</div>
+                        <img src="images/dist/direction/office.png" alt="Офис" class="possibility-content__img">
+                    </div>
+                    <div class="possibility-content-wrap">
+                        <div class="possibility-content__title">Перевозка погрузчиком</div>
+                        <img src="images/dist/direction/forklift.png" alt="Погрузчик" class="possibility-content__img">
+                    </div>
+                </div>
+                <div class="section-possibility__subtitle">К преимуществам доставки сборных грузов относятся:</div>
+                <div class="section-possibility-wrap">
+                        <div class="section-possibility-item">
+                            <svg class="advantages-item__check">
+                                <use xlink:href="images/dist/sprite.svg#check"></use>
+                            </svg>
+                            <div class="section-possibility-wrap__text">сжатые сроки и гибкие тарифы;</div>
+                        </div>
+                        <div class="section-possibility-item">
+                            <svg class="advantages-item__check">
+                                <use xlink:href="images/dist/sprite.svg#check"></use>
+                            </svg>
+                            <div class="section-possibility-wrap__text">отсутствие ограничений на минимальный объем перевозки;</div>
+                        </div>
+                        <div class="section-possibility-item">
+                            <svg class="advantages-item__check">
+                                <use xlink:href="images/dist/sprite.svg#check"></use>
+                            </svg>
+                            <div class="section-possibility-wrap__text">по предварительному заказу мы изготовим ящик любой формы и размера из фанеры для перевозки любых грузов;</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-additionally padding padding--bottom">
+    <div class="container">
+        <div class="col-12">
+            <h2 class="section-additionally_title title-margin">Дополнительные услуги</h2>
+            <div class="section-additionally__descr">В список дополнительных услуг входят:</div>
+            <ul class="section-additionally-wrap">
+                <li class="section-additionally-wrap__title">Складской сервис. <span> Компания предоставляет спектр услуг, включая погрузочно-разгрузочные работы с применением спецтехники, приемку, пересчет. Наши грузчики прошли специальное обучение, и знают особенности упаковки и погрузки мебели, посуды и хрупких предметов.</span>
+                </li>
+                <li class="section-additionally-wrap__title">Страхование грузов.<span> Оформление полиса обеспечивает безопасность, помогает минимизировать риски, связанные с транспортировкой, а также покрыть убытки при транспортировке. Стоимость страховки зависит от оценочной цены груза, направления и расстояния. Страхуем перевозки по РФ и СНГ.</span>
+                </li>
+            </ul>
+            <div class="section-additionally__text">При организации транспортировки мы учитываем нюансы и пожелания заказчика, предлагая клиентам
+                гибкую систему ценообразования и недорогие грузоперевозки.</div>
+        </div>
+    </div>
+</section>
+<section class="section-park padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h2 class="h2-title title-margin">Наш автопарк</h2>
+                <div class="section-park__text">ТК «Быстрая логистика» предоставляет грузовой транспорт для перевозок любого объема. Собственный автопарк и профессионализм водителей помогает компании предоставлять услуги по оптимальным тарифам из Набережных Челнов в Абакан. Мы гарантируем полную безопасность и сжатые сроки доставки грузов клиентам.
+                </div>
+                <div class="section-park__more">В автопарке транспортной компании доступно <span>более 50 грузовых автомобилей</span>, включая:
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="section-park-wrap">
+                    <li class="section-park-wrap__text">ГАЗели;</li>
+                    <li class="section-park-wrap__text">20-ти тонные фуры — тенты, рефрижераторы и изотермы;</li>
+                    <li class="section-park-wrap__text">сцепки грузоподъемностью от 20 тонн;</li>
+                    <li class="section-park-wrap__text">низкорамные тралы, включающие грузовой автомобиль и прицеп с грузоподъемностью до 60 тонн;</li>
+                    <li class="section-park-wrap__text">фургоны грузоподъемностью от 5 до 10 тонн,</li>
+                    <li class="section-park-wrap__text">зерновозы.</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-car">
+    <div class="card-car__title">Рефрижератор ISUZU</div>
+    <div class="card-car__wrap">
+        <div class="card-car__content">
+            <div class="card-car__price-title">Цена (за город):</div>
+            <div class="card-car__price">35-45 <span>&#8381;/км</span></div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Объем
+                    </div>
+                    <div class="card-car__info">
+                        40 м<sup>3</sup>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Тоннаж:
+                    </div>
+                    <div class="card-car__info">
+                        10 тонн
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Ширина:
+                    </div>
+                    <div class="card-car__info">
+                        2.45 м
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Высота:
+                    </div>
+                    <div class="card-car__info">
+                        2.45 м
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="images/dist/combined/card-car1.png" alt="" class="card-car__img">
+            <button class="button card-car__btn">Заказать перевозку</button>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-car">
+    <div class="card-car__title">Рефрижератор ISUZU</div>
+    <div class="card-car__wrap">
+        <div class="card-car__content">
+            <div class="card-car__price-title">Цена (за город):</div>
+            <div class="card-car__price">35-45 <span>&#8381;/км</span></div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Объем
+                    </div>
+                    <div class="card-car__info">
+                        40 м<sup>3</sup>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Тоннаж:
+                    </div>
+                    <div class="card-car__info">
+                        10 тонн
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Ширина:
+                    </div>
+                    <div class="card-car__info">
+                        2.45 м
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Высота:
+                    </div>
+                    <div class="card-car__info">
+                        2.45 м
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="images/dist/combined/card-car1.png" alt="" class="card-car__img">
+            <button class="button card-car__btn">Заказать перевозку</button>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-car">
+    <div class="card-car__title">Рефрижератор ISUZU</div>
+    <div class="card-car__wrap">
+        <div class="card-car__content">
+            <div class="card-car__price-title">Цена (за город):</div>
+            <div class="card-car__price">35-45 <span>&#8381;/км</span></div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Объем
+                    </div>
+                    <div class="card-car__info">
+                        40 м<sup>3</sup>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Тоннаж:
+                    </div>
+                    <div class="card-car__info">
+                        10 тонн
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Ширина:
+                    </div>
+                    <div class="card-car__info">
+                        2.45 м
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Высота:
+                    </div>
+                    <div class="card-car__info">
+                        2.45 м
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="images/dist/combined/card-car1.png" alt="" class="card-car__img">
+            <button class="button card-car__btn">Заказать перевозку</button>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card-car">
+    <div class="card-car__title">Рефрижератор ISUZU</div>
+    <div class="card-car__wrap">
+        <div class="card-car__content">
+            <div class="card-car__price-title">Цена (за город):</div>
+            <div class="card-car__price">35-45 <span>&#8381;/км</span></div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Объем
+                    </div>
+                    <div class="card-car__info">
+                        40 м<sup>3</sup>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Тоннаж:
+                    </div>
+                    <div class="card-car__info">
+                        10 тонн
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Ширина:
+                    </div>
+                    <div class="card-car__info">
+                        2.45 м
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-car__info-title">
+                        Высота:
+                    </div>
+                    <div class="card-car__info">
+                        2.45 м
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="images/dist/combined/card-car1.png" alt="" class="card-car__img">
+            <button class="button card-car__btn">Заказать перевозку</button>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-our-advantages padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-our-advantages_title title-margin">Наши преимущества</h2>
+                <div class="section-our-advantages_subtitle">К преимуществам сотрудничества с логистической компанией "Быстрая логистика" относятся:</div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="section-our-advantages-item">
+                    <div class="section-our-advantages-item__hidden">
+                        <div class="section-our-advantages-item__num">01</div>
+                    </div>
+                    <div class="section-our-advantages-item__text">выгодные тарифы и схемы перевозки грузов для всех клиентов;</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="section-our-advantages-item">
+                    <div class="section-our-advantages-item__hidden">
+                        <div class="section-our-advantages-item__num">02</div>
+                    </div>
+                    <div class="section-our-advantages-item__text">соблюдение сроков из-за налаженной логистики для расчета оптимального маршрута;</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="section-our-advantages-item">
+                    <div class="section-our-advantages-item__hidden">
+                        <div class="section-our-advantages-item__num">03</div>
+                    </div>
+                    <div class="section-our-advantages-item__text">полное документальное сопровождение доставки.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-how-order padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <h2 class="section-how-order__title">Как заказать перевозку груза из Набережных Челнов в Абакан?
+                </h2>
+                <div class="section-how-order__subtitle">ТК «Быстрая логистика» принимает заказы на организацию грузоперевозок ежедневно и даже в праздничные дни. Оставьте контакты или звоните по указанным на сайте телефонам. Менеджер компании рассчитает стоимость доставки груза из Набережных Челнов в Абакан, свяжется с вами в течение 30 минут для уточнения деталей и ответит на вопросы.
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="section-how-order-wrap">
+                    <img src="images/dist/icons/fast.svg" alt="Секундомер" class="section-how-order-wrap__img">
+                    <div class="section-how-order-wrap__title">Сжатые сроки доставки</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="section-how-order-wrap">
+                    <img src="images/dist/icons/insurance.svg" alt="Грузовик" class="section-how-order-wrap__img">
+                    <div class="section-how-order-wrap__title">Возможность отслеживать грузовое транспортное средство онлайн</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="section-how-order-wrap">
+                    <img src="images/dist/icons/transportation.svg" alt="Грузовик" class="section-how-order-wrap__img">
+                    <div class="section-how-order-wrap__title">Наличие современного автопарка</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="section-how-order-wrap">
+                    <img src="images/dist/icons/branches.svg" alt="Глобус" class="section-how-order-wrap__img">
+                    <div class="section-how-order-wrap__title">Широкая география перевозок</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="section-how-order-wrap">
+                    <img src="images/dist/icons/profitably.svg" alt="Профессионал" class="section-how-order-wrap__img">
+                    <div class="section-how-order-wrap__title">Профессиональное выполнение задач любой сложности</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="section-how-order-wrap">
+                    <img src="images/dist/icons/warehouse.svg" alt="Склад" class="section-how-order-wrap__img">
+                    <div class="section-how-order-wrap__title">Доступные тарифы на грузоперевозки 2020 года</div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="section-how-order__application">
+                    <span>Заполняйте заявку</span> на отправку груза на сайте или звоните по телефону компании для оформления перевозки через менеджера.
+                </div>
+                <div class="section-how-order__discr">
+                    Для нас неважно куда везти продукцию, главное — решить задачу клиента, предлагая недорогие грузоперевозки по сравнению с другими экспедиторами.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-other padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-other__title">Другие направления перевозок</div>
+            </div>
+            <ul class="section-other-wrap">
+                <li class="section-other-wrap__text">Набережные Челны - Алапаевск</li>
+                <li class="section-other-wrap__text">Набережные Челны - Благовещенск</li>
+                <li class="section-other-wrap__text">Набережные Челны - Тимашевск</li>
+                <li class="section-other-wrap__text">Набережные Челны - Красноуральск</li>
+                <li class="section-other-wrap__text">Набережные Челны - Нея</li>
+                <li class="section-other-wrap__text">Набережные Челны - Дивногорск</li>
+                <li class="section-other-wrap__text">Набережные Челны - Спасск</li>
+                <li class="section-other-wrap__text">Набережные Челны - Колпашево</li>
+                <li class="section-other-wrap__text">Набережные Челны - Сухой Лог</li>
+                <li class="section-other-wrap__text">Набережные Челны - Нижний Ломов</li>
+                <li class="section-other-wrap__text">Набережные Челны - Калининск</li>
+                <li class="section-other-wrap__text">Набережные Челны - Ливны</li>
+            </ul>
+            <div class="section-other-still">
+                <button class="section-other-still__btn">
+                    Еще направления
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-8 offset-xl-4">
+                <div class="main-form">
+    <div class="main-form__info">
+        <h2 class="main-form__title">Остались вопросы?</h2>
+        <div class="main-form__text">
+            Оставьте свои контакты, и мы перезвоним вам в ближайшее время! <br>
+            Или позвоните нам по телефону:
+        </div>
+        <div>
+            <a href="tel:+79276776880" class="main-form__tel">+7 927 677-68-80</a>
+        </div>
+        <div>
+            <a href="tel:+78552783288" class="main-form__tel">+7 855 278-32-88</a>
+        </div>
+    </div>
+    <form action="" class="main-form__form">
+        <label for="name" class="form__label">
+            <input type="text" id="name" name="name" class="main-form__input form__input form__input--default" placeholder="Ваше имя">
+        </label>
+        <label for="tel" class="form__label">
+            <input type="tel" id="tel" name="tel" class="main-form__input form__input form__input--default" placeholder="Номер телефона">
+        </label>
+        <div class="main-form__captcha">капча</div>
+        <button class="main-form__btn button button--large" type="submit">Отправить</button>
+        <div class="main-form__politic">Нажимая кнопку «Отправить», я соглашаюсь с условиями <a href="">Политики конфиденциальности</a></div>
+    </form>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer__top">
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><a href="">О компании</a></li>
+                        <li class="footer__nav-item"><a href="">Документы</a></li>
+                        <li class="footer__nav-item"><a href="">Филиалы</a></li>
+                        <li class="footer__nav-item"><a href="">Тарифы</a></li>
+                        <li class="footer__nav-item"><a href="">Автопарк</a></li>
+                    </ul>
+                    <button class="button footer__btn">
+                        <span class="button__icon">
+                            <svg class="">
+                                <use xlink:href="images/dist/sprite.svg#letter"></use>
+                            </svg>
+                        </span>
+                        Задать вопрос
+                    </button>
+                </div>
+                <div class="footer__center">
+                    <div class="footer-contacts">
+                        <div class="footer-contacts__logo">
+                            Быстрая
+                            логистика
+                        </div>
+                        <div>
+                            <a href="tel+79276776880" class="footer-contacts__tel">+7 927 677-68-80</a>
+                        </div>
+                        <div>
+                            <a href="tel+78552783288" class="footer-contacts__tel">+7 855 278-32-88</a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-links__block">
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Перевозки</a>
+                                <a href="" class="footer-links__item">Крупногабаритные перевозки</a>
+                                <a href="" class="footer-links__item">Перевозка негабаритных грузов</a>
+                                <a href="" class="footer-links__item">Квартирный домашний и военный переезд по России</a>
+                                <a href="" class="footer-links__item">Перевозка продуктов питания</a>
+                                <a href="" class="footer-links__item">Доставка в торговые сети</a>
+                                <a href="" class="footer-links__item">Перевозка сборных грузов</a>
+                                <a href="" class="footer-links__item">Военные переезды в другой город</a>
+                            </div>
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">О компании</a>
+                            </div>
+                        </div>
+                        <div class="footer-links__block">
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Направления</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Казахстан</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Армению</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Беларусь</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Узбекистан</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Кыргызстан</a>
+                                <a href="" class="footer-links__item">Грузоперевозки по России</a>
+                                <a href="" class="footer-links__item">Грузоперевозки из Китая</a>
+                            </div>
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Документы</a>
+                            </div>
+                        </div>
+                        <div class="footer-links__block">
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Сопутствующие услуги</a>
+                                <a href="" class="footer-links__item">Упаковка грузов</a>
+                                <a href="" class="footer-links__item">Страхование груза</a>
+                                <a href="" class="footer-links__item">Услуги грузчиков</a>
+                                <a href="" class="footer-links__item">Услуги спецтехники</a>
+                            </div>
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Филиалы</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div>
+                        Татарстан, г. Набережные Челны, 27 комплекс, ул. Галиаскара Камала, 18А, оф. 5, пом.2 <br>
+                        &copy;2023. Официальный сайт транспортной компании Быстрая логистика
+                    </div>
+                    <a href="">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="modal-order">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-close" data-dismiss="modal">
+                <svg class="form-modal-direction__close">
+                    <use xlink:href="images/dist/sprite.svg#close"></use>
+                </svg>
+            </div>
+            <div class="form-modal">
+                <h2 class="form-modal__title">Заказать грузоперевозку</h2>
+                <div class="form-modal-direction">
+                    <div class="form-modal-direction__city">Санкт-Петербург</div>
+                    <svg class="form-modal-direction__img d-none d-md-flex">
+                        <use xlink:href="images/dist/sprite.svg#geo"></use>
+                    </svg>
+
+                    <svg class="triangle-more d-flex d-md-none">
+                        <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                    </svg>
+
+                    <svg class="form-modal-direction__arrow d-none d-md-flex">
+                        <use xlink:href="images/dist/sprite.svg#modal-arrow"></use>
+                    </svg>
+
+                    <svg class="form-modal-direction__img d-none d-md-flex">
+                        <use xlink:href="images/dist/sprite.svg#geo"></use>
+                    </svg>
+
+                    <div class="form-modal-direction__city">Набережные Челны</div>
+                </div>
+                <div class="form-modal-content">
+                    <div class="form-modal-content__price">5 суток <span>-</span> 2 596 руб.</div>
+                    <div class="form-modal-content__descr">
+                        <span>Прямая грузоперевозка</span>  одна машина без перегрузки между машинами и складами
+                    </div>
+                    <form action="" class="form-modal-main">
+                        <label for="surname" class="form__label main-form__label">
+                            <input type="text" id="surname" name="surname" class="form-modal-main__input form__input form__input--default" placeholder="Фамилия">
+                        </label>
+                        <label for="name" class="form__label main-form__label">
+                            <input type="text" id="name" name="name" class="form-modal-main__input form__input form__input--default" placeholder="Имя">
+                        </label>
+                        <label for="patronymic" class="form__label main-form__label">
+                            <input type="text" id="patronymic" name="patronymic" class="form-modal-main__input form__input form__input--default" placeholder="Отчество">
+                        </label>
+                        <label for="tel" class="form__label main-form__label">
+                            <input type="tel" id="tel" name="tel" class="form-modal-main__input form__input form__input--default" placeholder="Номер телефона">
+                        </label>
+                        <label for="email" class="form__label main-form__label">
+                            <input type="email" id="email" name="email" class="form-modal-main__input form__input form__input--default" placeholder="E-mail">
+                        </label>
+                        <div class="form-politics">
+                            <div class="form-politics__text">Нажимая кнопку «Отправить», я соглашаюсь с условиями Политики конфиденциальности</div>
+                            <button class="button form-politics__btn">заказать</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="gulp-js/app.js"></script>
+<script src="gulp-js/modal.js"></script>
+</body>
+</html>

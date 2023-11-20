@@ -1,0 +1,721 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Азимут</title>
+    <link href="css/app.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- класс header--grey для серого хедера-->
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="#" class="header-logo">
+                <img src="images/dist/logo_azimut.png" alt="logo">
+                <div class="logo-title">
+                    <div class="logo-title__text">Азимут</div>
+                    <div class="logo-title__descr">Траспортная компания</div>
+                </div>
+            </a>
+            <div class="header-menu">
+                <div class="nav-full__item">
+                    <select class="select">
+                        <option value="moscow">Набережные Челны</option>
+                        <option value="saint-petersburg">Санкт-Петербург</option>
+                        <option value="novosibirsk">Новосибирск</option>
+                        <option value="ekaterinburg">Екатеринбург</option>
+                    </select>
+                </div>
+                <div class="nav-full__item">
+                    <a class="nav-full__link" href="">О компании</a>
+                    <a class="nav-full__link" href="">Документы</a>
+                    <a class="nav-full__link" href="">Филиалы</a>
+                    <a class="nav-full__link" href="">Перевозки</a>
+                    <a class="nav-full__link" href="">Направления</a>
+                    <a class="nav-full__link" href="">Сопутствующие услуги</a>
+                </div>
+                <div class="header-contacts__mobile">
+                    <a class="header-contacts__phone" href="tel:+78552783288">+7 855 278-32-88</a>
+                    <a class="header-contacts__phone" href="tel:+79276776880">+7 927 677-68-80</a>
+                </div>
+            </div>
+            <div class="nav-full__toggle js-nav-full__toggle">
+                <div class="nav-full__toggle-line"></div>
+                <div class="nav-full__toggle-line"></div>
+                <div class="nav-full__toggle-line"></div>
+            </div>
+            <div class="nav-full js-nav-full">
+                <div class="nav-full__inner">
+                    <div class="nav-full__list">
+                        <div class="nav-full__item">
+                            <select class="nav-full__select select">
+                                <option value="moscow">Набережные Челны</option>
+                                <option value="saint-petersburg">Санкт-Петербург</option>
+                                <option value="novosibirsk">Новосибирск</option>
+                                <option value="ekaterinburg">Екатеринбург</option>
+                            </select>
+                        </div>
+                        <div class="nav-full__item">
+                            <a class="nav-full__link" href="">О компании</a>
+                            <a class="nav-full__link" href="">Документы</a>
+                            <a class="nav-full__link" href="">Филиалы</a>
+                            <a class="nav-full__link" href="">Перевозки</a>
+                            <a class="nav-full__link" href="">Направления</a>
+                            <a class="nav-full__link" href="">Сопутствующие услуги</a>
+                        </div>
+                        <div class="header-contacts__mobile">
+                            <a class="header-contacts__phone" href="tel:+78552783288">+7 855 278-32-88</a>
+                            <a class="header-contacts__phone" href="tel:+79276776880">+7 927 677-68-80</a>
+                        </div>
+                        <div class="delivery-buttons">
+                            <button class="button delivery-buttons__button">
+                                <span class="button__icon">
+                                    <svg class="">
+                                        <use xlink:href="images/dist/sprite.svg#letter"></use>
+                                    </svg>
+                                </span>
+                                Оформить заказ
+                            </button>
+                            <a class="button delivery-buttons__button" href="#modal-order" data-toggle="modal">
+                                <span class="button__icon">
+                                    <svg class="">
+                                        <use xlink:href="images/dist/sprite.svg#message"></use>
+                                    </svg>
+                                </span>
+                                Есть вопрос?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-wrap">
+                        <ul class="breadcrumbs-inner">
+                            <li class="breadcrumbs-inner__item">
+                                <a href="/" class="breadcrumbs-inner__link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="breadcrumbs-inner__item">
+                                <a href="/" class="breadcrumbs-inner__link">
+                                    О компании
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="delivery-buttons">
+                            <button class="button delivery-buttons__button">
+                                <span class="button__icon">
+                                    <svg class="">
+                                        <use xlink:href="images/dist/sprite.svg#letter"></use>
+                                    </svg>
+                                </span>
+                                Оформить заказ
+                            </button>
+                            <a class="button delivery-buttons__button" href="#modal-order" data-toggle="modal">
+                                <span class="button__icon">
+                                    <svg class="">
+                                        <use xlink:href="images/dist/sprite.svg#message"></use>
+                                    </svg>
+                                </span>
+                                Есть вопрос?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="delivery">
+    <div class="container">
+        <div class="delivery-buttons">
+            <button class="button delivery-buttons__button">
+                <span class="button__icon">
+                    <svg class="">
+                        <use xlink:href="images/dist/sprite.svg#letter"></use>
+                    </svg>
+                </span>
+                Оформить заказ
+            </button>
+            <button class="button delivery-buttons__button">
+                <span class="button__icon">
+                    <svg class="">
+                        <use xlink:href="images/dist/sprite.svg#message"></use>
+                    </svg>
+                </span>
+                Есть вопрос?
+            </button>
+        </div>
+        <div class="delivery-wrap">
+            <div class="delivery-title">
+                <h1 class="delivery__title">Доставка грузов <br> по России</h1>
+                <div class="delivery__subtitle">из Набережных Челнов</div>
+                <button class="button button--large">
+                    Оставить заявку
+                </button>
+            </div>
+            <div class="">
+                <div class="delivery-block">
+                    <div class="delivery-block__descr">
+                        <div>
+                            <div class="delivery-block__title">Наш автопарк</div>
+                            <div class="delivery-block__subtitle">Разные авто для решения любых задач</div>
+                        </div>
+                        <a href="#" class="delivery-block__btn">
+                            Подробнее
+                            <svg class="triangle-more">
+                                <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="delivery-block__picture">
+                        <img src="images/dist/fleet.jpg" alt="fleet">
+                    </div>
+                </div>
+                <div class="delivery-block">
+                    <div class="delivery-block__descr">
+                        <div>
+                            <div class="delivery-block__title">Квартирный переезд</div>
+                        </div>
+                        <a href="#" class="delivery-block__btn">
+                            Подробнее
+                            <svg class="triangle-more">
+                                <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="delivery-block__picture">
+                        <img src="images/dist/removal.jpg" alt="removal">
+                    </div>
+                </div>
+                <div class="delivery-block">
+                    <div class="delivery-block__descr">
+                        <div>
+                            <div class="delivery-block__title">Сеть филиалов</div>
+                            <div class="delivery-block__subtitle">Более 40 филиалов по России</div>
+                        </div>
+                        <a href="#" class="delivery-block__btn">
+                            Подробнее
+                            <svg class="triangle-more">
+                                <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="delivery-block__picture delivery-block__picture--geo">
+                        <img src="images/dist/geoposition_1.png" alt="geoposition">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-calc">
+            <form class="form">
+                <div>
+                    <div class="form__title">Калькулятор грузоперевозки</div>
+                    <div class="form__subtitle">Для расчета стоимости и срока перевозки укажите параметры</div>
+                </div>
+                <div class="form-search">
+                    <input type="text" name="" placeholder="Откуда" class="form-search__input form__input">
+                    <button class="form-search__btn form__btn">
+                        <span class="form__btn-icon">
+                            <svg class="">
+                                <use xlink:href="images/dist/sprite.svg#arrow"></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <input type="text" name="" placeholder="Куда" class="form-search__input form__input">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="section-transportation padding padding--bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-xl-7">
+                <h2 class="title-margin title-before">Грузоперевозки по России, странам СНГ и Европе</h2>
+                <p>Международная транспортная компания "Быстрая логистика" из Набережных Челнов осуществляет доставку грузов
+                    по России. Также оказываем транспортные услуги для перевозки в страны СНГ, Китай и Европу.</p>
+                <p>Логистическая компания "Быстрая логистика" работает на рынке грузоперевозок уже более 6 лет. За это время
+                    она не только накопила богатый опыт по организации доставок для интернет-магазинов и частных лиц, но и
+                    выстроила
+                    надежную систему, позволяющую оперативно решать все логистические вопросы клиентов для бизнеса.</p>
+                <p>Наша организация — одна из крупных транспортных компаний в Набережных Челнах. Мы работаем по всем
+                    направлениям: от Калининграда до Владивостока. А также готовы взяться за любой тип перевозки грузов
+                    автомобильным транспортом, в том числе за перевозку опасных грузов.</p>
+                <p>Наша организация — одна из крупных транспортных компаний в Набережных Челнах. Мы работаем по всем
+                    направлениям: от Калининграда до Владивостока. А также готовы взяться за любой тип перевозки грузов
+                    автомобильным транспортом, в том числе за перевозку опасных грузов.</p>
+            </div>
+            <div class="col-lg-6 col-xl-5">
+                <div class="our-service">
+                    <div class="our-service__title">Наши услуги</div>
+                    <div class="services-block__wrap">
+                        <div class="services-block">
+                            <div class="services-block__text">Перевозка продуктов
+                                питания
+                            </div>
+                        </div>
+                        <div class="services-block">
+                            <div class="services-block__text">Крупногабаритные
+                                перевозки
+                            </div>
+                        </div>
+                        <div class="services-block">
+                            <div class="services-block__text">Перевозка спецтехники</div>
+                        </div>
+                        <div class="services-block">
+                            <div class="services-block__text">Контейнерная перевозка
+                                грузов
+                            </div>
+                        </div>
+                        <div class="services-block">
+                            <div class="services-block__text">Рефрижераторные
+                                перевозки
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-advantages padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="title-margin title-before">Наши главные преимущества</h2>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="advantages-item">
+                    <div class="advantages-item__img">
+                        <img src="images/dist/icons/warehouse.svg" alt="warehouse">
+                    </div>
+
+                    <div class="advantages-item__title">Без складских задержек.</div>
+                    <div class="advantages-item__descr">Груз будет доставлен напрямую без перегрузок. Доставляем от двери до двери.</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="advantages-item">
+                    <div class="advantages-item__img">
+                        <img src="images/dist/icons/fast.svg" alt="fast">
+                    </div>
+                    <div class="advantages-item__title">Быстрые грузоперевозки по России.</div>
+                    <div class="advantages-item__descr">Отправка груза может быть день в день. В сутки автомобиль проезжает в среднем 800 км.</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="advantages-item">
+                    <div class="advantages-item__img">
+                        <img src="images/dist/icons/profitably.svg" alt="profitably">
+                    </div>
+                    <div class="advantages-item__title">Демократичные цены.</div>
+                    <div class="advantages-item__descr">У нас цены выгоднее, позвоните и убедитесь в этом сами.</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="advantages-item">
+                    <div class="advantages-item__img">
+                        <img src="images/dist/icons/approach.svg" alt="approach">
+                    </div>
+                    <div class="advantages-item__title">Индивидуальный подход</div>
+                    <div class="advantages-item__descr">К каждому клиенту и полная документальная отчетность.</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="advantages-item">
+                    <div class="advantages-item__img">
+                        <img src="images/dist/icons/transportation.svg" alt="transportation">
+                    </div>
+                    <div class="advantages-item__title">Перевозка крупногабаритных, тяжелых больших грузов до 60 тонн.</div>
+                    <div class="advantages-item__descr">При получении спецразрешения – объем может быть увеличен.</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="advantages-item">
+                    <div class="advantages-item__img">
+                        <img src="images/dist/icons/insurance.svg" alt="insurance">
+                    </div>
+                    <div class="advantages-item__title">Страхование транспортировки груза.</div>
+                    <div class="advantages-item__descr">Ваш груз будет застрахован на период перевозки.</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="advantages-item">
+                    <div class="advantages-item__img">
+                        <img src="images/dist/icons/time.svg" alt="time">
+                    </div>
+                    <div class="advantages-item__title">12 часов бесплатного времени</div>
+                    <div class="advantages-item__descr">на загрузку/выгрузку вашего груза.</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="advantages-item">
+                    <div class="advantages-item__img">
+                        <img src="images/dist/icons/branches.svg" alt="branches">
+                    </div>
+                    <div class="advantages-item__title">Сеть филиалов в 50 разных городах России.</div>
+                    <div class="advantages-item__descr">Оперативные грузоперевозки по всей России.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-fleet padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-margin">Наш автопарк</h2>
+                        <div class="section-fleet__descr">Логистическая компания "Быстрая логистика" обладает большим автопарком. В него входят ГАЗели, тентовые фуры,
+                            тралы и рефрижераторы. Вы можете выбрать подходящий транспорт в зависимости от габаритов и типа груза.</div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="advantages-item">
+                            <svg class="advantages-item__check">
+                                <use xlink:href="images/dist/sprite.svg#check"></use>
+                            </svg>
+                            <div class="advantages-item__title">Доставляем точно и в срок</div>
+                            <div class="advantages-item__descr advantages-item__descr__mb">Разработана надежная
+                                логистическая цепочка. Подача машины уже через час после заказа грузоперевозки</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="advantages-item">
+                            <svg class="advantages-item__check">
+                                <use xlink:href="images/dist/sprite.svg#check"></use>
+                            </svg>
+                            <div class="advantages-item__title">12 часов бесплатно</div>
+                            <div class="advantages-item__descr advantages-item__descr__mb">12 часов на загрузку/выгрузку вещей бесплатно. Машина заберет и доставит груз в указанную дату как вам будет удобно.</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="advantages-item">
+                            <svg class="advantages-item__check">
+                                <use xlink:href="images/dist/sprite.svg#check"></use>
+                            </svg>
+                            <div class="advantages-item__title">Груз всегда под контролем</div>
+                            <div class="advantages-item__descr advantages-item__descr__mb">Спутниковая система слежения доступна 24 часа в сутки</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="advantages-item">
+                            <svg class="advantages-item__check">
+                                <use xlink:href="images/dist/sprite.svg#check"></use>
+                            </svg>
+                            <div class="advantages-item__title">Без складских перегрузок</div>
+                            <div class="advantages-item__descr advantages-item__descr__mb">Машина едет напрямую, что позволяет доставить груз максимально быстро</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="advantages-item">
+                            <svg class="advantages-item__check">
+                                <use xlink:href="images/dist/sprite.svg#check"></use>
+                            </svg>
+                            <div class="advantages-item__title">Честные цены</div>
+                            <div class="advantages-item__descr advantages-item__descr__mb">Никаких дополнительных платежей. Оплата услуг транспортно- логистической компании производится любым удобным для вас способом</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="advantages-item">
+                            <svg class="advantages-item__check">
+                                <use xlink:href="images/dist/sprite.svg#check"></use>
+                            </svg>
+                            <div class="advantages-item__title">Страхование груза</div>
+                            <div class="advantages-item__descr advantages-item__descr__mb">Несём ответственность за сохранность вашего груза — все перевозимые грузы застрахованы</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex d-lg-none justify-content-center flex-column">
+                <picture>
+                    <source srcset="images/dist/truck.webp 1x, images/dist/truck2.webp 2x" type="image/webp">
+                    <img class="section__bg-img" src="images/dist/truck.jpg" srcset="images/dist/truck.jpg 1x, images/dist/truck2.jpg 2x" alt="Грузовик">
+                </picture>
+            </div>
+            <div class="col-12">
+                <div class="section-fleet__footer">
+                    Если остались вопросы, <a href="#">оставьте заявку</a> на сайте или позвоните на горячую линию. Адреса и телефоны указаны на сайте.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-wagon padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="default-block__left">
+                    <h2 class="title-margin">Перевозим все виды грузов</h2>
+                    <div class="advantages-wrap__wagon">
+                        <div class="advantages-item__descr">Стандартные грузы – имеющие упаковку: ящик, бочка, короб</div>
+                        <div class="advantages-item__descr">Негабаритные грузы – тяжелые, не правильной формы, громоздкие</div>
+                        <div class="advantages-item__descr">Опасные грузы – требующие специальных правил транспортировки</div>
+                        <div class="advantages-item__descr">Строительные грузы – сыпучие, наливные, насыпные, тарные</div>
+                        <div class="advantages-item__descr">Организация перевозок массовых грузов</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex d-lg-none justify-content-center flex-column">
+                <picture>
+                    <img class="section__bg-img" src="images/dist/container.png" srcset="images/dist/container.png 1x, images/dist/container2.png 2x" alt="Контейнер">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-news padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="news-title">
+                    <h3 class="news-title__action">Новости и акции</h3>
+                    <a href="" class="news-title__all">Смотреть все
+                        <span>
+                            <svg class="triangle-more">
+                                <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="news-content row">
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="news-wrap">
+                    <div class="news-item">
+                        <button class="button news-item__btn">Важная информация</button>
+                        <div class="news-item__text">Набор менеджеров в сфере
+                            логистики в Казани</div>
+                        <a href="#" class="news-item__more">подробнее
+                            <svg class="triangle-more">
+                                <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="news-wrap__date">1 сентября 2023</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="news-wrap">
+                    <div class="news-item">
+                        <button class="button news-item__btn">Важная информация</button>
+                        <div class="news-item__text">Набор менеджеров в сфере
+                            логистики в Казани</div>
+                        <a href="#" class="news-item__more">подробнее
+                            <svg class="triangle-more">
+                                <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="news-wrap__date">1 сентября 2023</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="news-wrap">
+                    <div class="news-item">
+                        <button class="button news-item__btn">Важная информация</button>
+                        <div class="news-item__text">Набор менеджеров в сфере
+                            логистики в Казани</div>
+                        <a href="#" class="news-item__more">подробнее
+                            <svg class="triangle-more">
+                                <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="news-wrap__date">1 сентября 2023</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="news-wrap">
+                    <div class="news-item">
+                        <button class="button news-item__btn">Важная информация</button>
+                        <div class="news-item__text">Набор менеджеров в сфере
+                            логистики в Казани</div>
+                        <a href="#" class="news-item__more">подробнее
+                            <svg class="triangle-more">
+                                <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="news-wrap__date">1 сентября 2023</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer__top">
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><a href="">О компании</a></li>
+                        <li class="footer__nav-item"><a href="">Документы</a></li>
+                        <li class="footer__nav-item"><a href="">Филиалы</a></li>
+                        <li class="footer__nav-item"><a href="">Тарифы</a></li>
+                        <li class="footer__nav-item"><a href="">Автопарк</a></li>
+                    </ul>
+                    <button class="button footer__btn">
+                        <span class="button__icon">
+                            <svg class="">
+                                <use xlink:href="images/dist/sprite.svg#letter"></use>
+                            </svg>
+                        </span>
+                        Задать вопрос
+                    </button>
+                </div>
+                <div class="footer__center">
+                    <div class="footer-contacts">
+                        <div class="footer-contacts__logo">
+                            Быстрая
+                            логистика
+                        </div>
+                        <div>
+                            <a href="tel+79276776880" class="footer-contacts__tel">+7 927 677-68-80</a>
+                        </div>
+                        <div>
+                            <a href="tel+78552783288" class="footer-contacts__tel">+7 855 278-32-88</a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-links__block">
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Перевозки</a>
+                                <a href="" class="footer-links__item">Крупногабаритные перевозки</a>
+                                <a href="" class="footer-links__item">Перевозка негабаритных грузов</a>
+                                <a href="" class="footer-links__item">Квартирный домашний и военный переезд по России</a>
+                                <a href="" class="footer-links__item">Перевозка продуктов питания</a>
+                                <a href="" class="footer-links__item">Доставка в торговые сети</a>
+                                <a href="" class="footer-links__item">Перевозка сборных грузов</a>
+                                <a href="" class="footer-links__item">Военные переезды в другой город</a>
+                            </div>
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">О компании</a>
+                            </div>
+                        </div>
+                        <div class="footer-links__block">
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Направления</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Казахстан</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Армению</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Беларусь</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Узбекистан</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Кыргызстан</a>
+                                <a href="" class="footer-links__item">Грузоперевозки по России</a>
+                                <a href="" class="footer-links__item">Грузоперевозки из Китая</a>
+                            </div>
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Документы</a>
+                            </div>
+                        </div>
+                        <div class="footer-links__block">
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Сопутствующие услуги</a>
+                                <a href="" class="footer-links__item">Упаковка грузов</a>
+                                <a href="" class="footer-links__item">Страхование груза</a>
+                                <a href="" class="footer-links__item">Услуги грузчиков</a>
+                                <a href="" class="footer-links__item">Услуги спецтехники</a>
+                            </div>
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Филиалы</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div>
+                        Татарстан, г. Набережные Челны, 27 комплекс, ул. Галиаскара Камала, 18А, оф. 5, пом.2 <br>
+                        &copy;2023. Официальный сайт транспортной компании Быстрая логистика
+                    </div>
+                    <a href="">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="modal-order">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-close" data-dismiss="modal">
+                <svg class="form-modal-direction__close">
+                    <use xlink:href="images/dist/sprite.svg#close"></use>
+                </svg>
+            </div>
+            <div class="form-modal">
+                <h2 class="form-modal__title">Заказать грузоперевозку</h2>
+                <div class="form-modal-direction">
+                    <div class="form-modal-direction__city">Санкт-Петербург</div>
+                    <svg class="form-modal-direction__img d-none d-md-flex">
+                        <use xlink:href="images/dist/sprite.svg#geo"></use>
+                    </svg>
+
+                    <svg class="triangle-more d-flex d-md-none">
+                        <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                    </svg>
+
+                    <svg class="form-modal-direction__arrow d-none d-md-flex">
+                        <use xlink:href="images/dist/sprite.svg#modal-arrow"></use>
+                    </svg>
+
+                    <svg class="form-modal-direction__img d-none d-md-flex">
+                        <use xlink:href="images/dist/sprite.svg#geo"></use>
+                    </svg>
+
+                    <div class="form-modal-direction__city">Набережные Челны</div>
+                </div>
+                <div class="form-modal-content">
+                    <div class="form-modal-content__price">5 суток <span>-</span> 2 596 руб.</div>
+                    <div class="form-modal-content__descr">
+                        <span>Прямая грузоперевозка</span>  одна машина без перегрузки между машинами и складами
+                    </div>
+                    <form action="" class="form-modal-main">
+                        <label for="surname" class="form__label main-form__label">
+                            <input type="text" id="surname" name="surname" class="form-modal-main__input form__input form__input--default" placeholder="Фамилия">
+                        </label>
+                        <label for="name" class="form__label main-form__label">
+                            <input type="text" id="name" name="name" class="form-modal-main__input form__input form__input--default" placeholder="Имя">
+                        </label>
+                        <label for="patronymic" class="form__label main-form__label">
+                            <input type="text" id="patronymic" name="patronymic" class="form-modal-main__input form__input form__input--default" placeholder="Отчество">
+                        </label>
+                        <label for="tel" class="form__label main-form__label">
+                            <input type="tel" id="tel" name="tel" class="form-modal-main__input form__input form__input--default" placeholder="Номер телефона">
+                        </label>
+                        <label for="email" class="form__label main-form__label">
+                            <input type="email" id="email" name="email" class="form-modal-main__input form__input form__input--default" placeholder="E-mail">
+                        </label>
+                        <div class="form-politics">
+                            <div class="form-politics__text">Нажимая кнопку «Отправить», я соглашаюсь с условиями Политики конфиденциальности</div>
+                            <button class="button form-politics__btn">заказать</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="gulp-js/app.js"></script>
+<script src="gulp-js/modal.js"></script>
+</body>
+</html>
