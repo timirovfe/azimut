@@ -24,14 +24,6 @@
             </a>
             <div class="header-menu">
                 <div class="nav-full__item">
-                    <select class="select">
-                        <option value="moscow">Набережные Челны</option>
-                        <option value="saint-petersburg">Санкт-Петербург</option>
-                        <option value="novosibirsk">Новосибирск</option>
-                        <option value="ekaterinburg">Екатеринбург</option>
-                    </select>
-                </div>
-                <div class="nav-full__item">
                     <a class="nav-full__link" href="">О компании</a>
                     <a class="nav-full__link" href="">Документы</a>
                     <a class="nav-full__link" href="">Филиалы</a>
@@ -52,14 +44,6 @@
             <div class="nav-full js-nav-full">
                 <div class="nav-full__inner">
                     <div class="nav-full__list">
-                        <div class="nav-full__item">
-                            <select class="nav-full__select select">
-                                <option value="moscow">Набережные Челны</option>
-                                <option value="saint-petersburg">Санкт-Петербург</option>
-                                <option value="novosibirsk">Новосибирск</option>
-                                <option value="ekaterinburg">Екатеринбург</option>
-                            </select>
-                        </div>
                         <div class="nav-full__item">
                             <a class="nav-full__link" href="">О компании</a>
                             <a class="nav-full__link" href="">Документы</a>
@@ -151,26 +135,22 @@
                     Гарантируем сохранность имущества при перевозке и соблюдение сроков доставки. У нас доступные цены —
                     сравните сами!</span>
             </div>
-            <div class="col-12 d-flex d-lg-none justify-content-center flex-column">
-                <img class="section__bg-img" src="images/dist/direction/direction-bg-truck.png" srcset="images/dist/direction/direction-bg-truck.png 1x, images/dist/direction/direction-bg-truck2.png 2x" alt="Грузовик">
+            <div class="col-12 d-flex d-lg-none justify-content-center">
+                <source srcset="images/dist/direction/direction-bg-truck.png 1x, images/dist/direction/direction-bg-truck@2x.png 2x" type="image/png" media="(min-width: 576px)">
+                <source srcset="images/dist/direction/direction-bg-truck-mob.png 1x, images/dist/direction/direction-bg-truck-mob@2x.png 2x" type="image/png">
+                
+                <img class="section__bg-img" src="images/dist/direction/direction-bg-truck.png" srcset="images/dist/direction/direction-bg-truck.png 1x, images/dist/direction/direction-bg-truck@2x.png 2x" alt="Грузовик">
                 </picture>
             </div>
             <div class="col-12">
-                <form class="form section-combined__form">
+                <form class="form form--min">
     <div>
         <div class="form__title">Калькулятор грузоперевозки</div>
         <div class="form__subtitle">Для расчета стоимости и срока перевозки укажите параметры</div>
     </div>
     <div class="form-search">
-        <input type="text" name="" placeholder="Откуда" class="form-search__input form__input">
-        <button class="form-search__btn form__btn">
-            <span class="form__btn-icon">
-                <svg class="">
-                    <use xlink:href="images/dist/sprite.svg#arrow"></use>
-                </svg>
-            </span>
-        </button>
         <input type="text" name="" placeholder="Куда" class="form-search__input form__input">
+        <button class="form--min__btn button">Рассчитать</button>
     </div>
 </form>
             </div>
@@ -491,7 +471,7 @@
         </div>
         <div>
             <img src="images/dist/combined/card-car1.png" alt="" class="card-car__img">
-            <button class="button card-car__btn">Заказать перевозку</button>
+            <button class="button card-car__btn" aria-label="Заказать перевозку">Заказать перевозку</button>
         </div>
     </div>
 </div>
@@ -540,7 +520,7 @@
         </div>
         <div>
             <img src="images/dist/combined/card-car1.png" alt="" class="card-car__img">
-            <button class="button card-car__btn">Заказать перевозку</button>
+            <button class="button card-car__btn" aria-label="Заказать перевозку">Заказать перевозку</button>
         </div>
     </div>
 </div>
@@ -589,7 +569,7 @@
         </div>
         <div>
             <img src="images/dist/combined/card-car1.png" alt="" class="card-car__img">
-            <button class="button card-car__btn">Заказать перевозку</button>
+            <button class="button card-car__btn" aria-label="Заказать перевозку">Заказать перевозку</button>
         </div>
     </div>
 </div>
@@ -638,7 +618,7 @@
         </div>
         <div>
             <img src="images/dist/combined/card-car1.png" alt="" class="card-car__img">
-            <button class="button card-car__btn">Заказать перевозку</button>
+            <button class="button card-car__btn" aria-label="Заказать перевозку">Заказать перевозку</button>
         </div>
     </div>
 </div>
@@ -783,14 +763,14 @@
         </div>
     </div>
     <form action="" class="main-form__form">
-        <label for="name" class="form__label">
+        <label for="name" class="main-form__label">
             <input type="text" id="name" name="name" class="main-form__input form__input form__input--default" placeholder="Ваше имя">
         </label>
-        <label for="tel" class="form__label">
+        <label for="tel" class="main-form__label">
             <input type="tel" id="tel" name="tel" class="main-form__input form__input form__input--default" placeholder="Номер телефона">
         </label>
         <div class="main-form__captcha">капча</div>
-        <button class="main-form__btn button button--large" type="submit">Отправить</button>
+        <button class="main-form__btn button button--large" type="submit" aria-label="Отправить">Отправить</button>
         <div class="main-form__politic">Нажимая кнопку «Отправить», я соглашаюсь с условиями <a href="">Политики конфиденциальности</a></div>
     </form>
 </div>
@@ -812,10 +792,10 @@
                         <li class="footer__nav-item"><a href="">Тарифы</a></li>
                         <li class="footer__nav-item"><a href="">Автопарк</a></li>
                     </ul>
-                    <button class="button footer__btn">
+                    <button class="button footer__btn" aria-label="Задать вопрос">
                         <span class="button__icon">
                             <svg class="">
-                                <use xlink:href="images/dist/sprite.svg#letter"></use>
+                                <use xlink:href="images/dist/sprite.svg#message"></use>
                             </svg>
                         </span>
                         Задать вопрос
@@ -881,12 +861,17 @@
                 </div>
                 <div class="footer__bottom">
                     <div>
-                        Татарстан, г. Набережные Челны, 27 комплекс, ул. Галиаскара Камала, 18А, оф. 5, пом.2 <br>
-                        &copy;2023. Официальный сайт транспортной компании Быстрая логистика
+                        426003, Ижевск, Пойма, дом № 11, литер А, офис 102 <br>
+                        &copy;2023. Официальный сайт транспортной компании Азимут
                     </div>
-                    <a href="">
-                        Политика конфиденциальности
-                    </a>
+                    <div class="d-sm-flex">
+                        <div class="mt-3 mt-sm-0 ms-sm-2">
+                            ИНН 1841082966
+                        </div>
+                        <a href="">
+                            Политика конфиденциальности
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -946,7 +931,7 @@
                         </label>
                         <div class="form-politics">
                             <div class="form-politics__text">Нажимая кнопку «Отправить», я соглашаюсь с условиями Политики конфиденциальности</div>
-                            <button class="button form-politics__btn">заказать</button>
+                            <button class="button form-politics__btn" aria-label="Заказать">заказать</button>
                         </div>
                     </form>
                 </div>

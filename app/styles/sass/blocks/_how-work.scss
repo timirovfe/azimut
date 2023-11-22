@@ -1,0 +1,70 @@
+.how-work {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include md-block {
+    justify-content: start;
+  }
+}
+
+.how-work-item {
+  height: inherit;
+  width: 100%;
+  max-width: 340px;
+  background: linear-gradient(180deg, $button-gradient-first 0%, $button-gradient-second 100%);
+  box-shadow: 0px 48px 48px 0px rgba(0, 0, 0, 0.09);
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  font-weight: 700;
+  position: relative;
+  margin: 0 5px 15px;
+  @include sm-block {
+    width: 155px;
+    height: 201px;
+  }
+  @include md-block {
+    margin-right: 43px;
+
+    &:before {
+      content: url(#{$section-how-work-shevron});
+      display: inline-block;
+      width: 27px;
+      height: 64px;
+      position: absolute;
+      right: -37px;
+      top: calc(50% - 27px);
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &__hidden {
+    overflow: hidden;
+  }
+
+  &__text {
+    padding: 28px 16px 0;
+    font-weight: 400;
+    font-size: 18px;
+    @include sm-block {
+      font-size: 14px;
+    }
+  }
+
+  &__num {
+    font-size: 72px;
+    line-height: 1;
+    margin: 0 0 -15px -6px;
+    color: $button-gradient-first;
+  }
+}

@@ -1,0 +1,21 @@
+@use 'sass:math';
+@use 'sass:color';
+
+@import 'fonts';
+@import './smart-grid-breakpoints';
+@import './vars';
+@import 'blocks/buttons';
+@import 'blocks/headings';
+@import 'blocks/header';
+@import "blocks/general";
+@import 'blocks/footer';
+@import 'blocks/sidebar';
+@import 'blocks/form';
+@import 'blocks/how-work';
+@import 'blocks/privilege';
+@import 'blocks/card-car';
+@import 'blocks/possibility';
+@import 'blocks/main-form';
+@import 'blocks/direction-table';
+@import 'blocks/modal';
+@import 'blocks/pagination';

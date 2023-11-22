@@ -1,0 +1,36 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 33px;
+}
+
+.pagination-list {
+  padding: 0 22px;
+  font-size: 15px;
+
+  &.active {
+    pointer-events: none;
+    font-weight: 600;
+  }
+
+  &__prev, &__next {
+    fill: $article__more;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    svg {
+      height: 22px;
+      width: 15px;
+    }
+  }
+
+  &__prev {
+    padding-left: 0;
+  }
+
+  &__next {
+    padding-right: 0;
+  }
+}

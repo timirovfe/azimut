@@ -1,0 +1,114 @@
+.direction-table {
+  font-size: 16px;
+  line-height: 1;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+
+  tbody {
+    width: 100%;
+    display: inline-table;
+  }
+
+  th, td {
+    padding: 12px 5px;
+    min-width: 145px;
+    @include lg-block {
+      padding: 12px 0;
+      min-width: inherit;
+    }
+  }
+
+  tr {
+    &:nth-child(2n+2){
+      background: #F3F3F3;
+    }
+  }
+
+  td {
+    font-weight: 600;
+
+    &:first-child {
+      padding: 0 5px;
+      @include lg-block {
+        padding-left: 44px;
+        padding-right: 0;
+      }
+    }
+
+    &:last-child {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  }
+
+  &__title {
+    background-color: #fff0 !important;
+
+    th {
+      text-align: left;
+      @include lg-block {
+        padding-bottom: 22px;
+      }
+
+      &:first-child {
+        padding-left: 15px;
+        @include lg-block {
+          padding-left: 37px;
+        }
+      }
+
+      &:nth-child(2) {
+        padding: 12px 5px;
+        @include lg-block {
+          padding-bottom: 22px;
+          padding-left: 44px;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  &__info {
+    vertical-align: baseline;
+    width: 286px;
+    border-radius: 5.496px;
+    background: linear-gradient(180deg, $button-gradient-first 0%, $button-gradient-second 100%);
+    box-shadow: 0px 48px 48px 0px rgba(0, 0, 0, 0.09);
+    font-size: 15px;
+    color: $white;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 15px !important;
+    @include lg-block {
+      padding: 37px !important;
+      font-size: 21px;
+    }
+
+    &+ td {
+      padding: 0 5px;
+      @include lg-block {
+        padding-left: 44px;
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__margin {
+    margin-top: 47px;
+    display: block;
+  }
+
+  &__button {
+    background: $table__button-bg;
+    border-radius: 110px;
+    color: $white;
+    font-size: 15px;
+    max-width: 241px;
+    padding: 21px 5px;
+    @include lg-block {
+      font-size: 18px;
+    }
+  }
+}

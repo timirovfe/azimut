@@ -24,14 +24,6 @@
             </a>
             <div class="header-menu">
                 <div class="nav-full__item">
-                    <select class="select">
-                        <option value="moscow">Набережные Челны</option>
-                        <option value="saint-petersburg">Санкт-Петербург</option>
-                        <option value="novosibirsk">Новосибирск</option>
-                        <option value="ekaterinburg">Екатеринбург</option>
-                    </select>
-                </div>
-                <div class="nav-full__item">
                     <a class="nav-full__link" href="">О компании</a>
                     <a class="nav-full__link" href="">Документы</a>
                     <a class="nav-full__link" href="">Филиалы</a>
@@ -52,14 +44,6 @@
             <div class="nav-full js-nav-full">
                 <div class="nav-full__inner">
                     <div class="nav-full__list">
-                        <div class="nav-full__item">
-                            <select class="nav-full__select select">
-                                <option value="moscow">Набережные Челны</option>
-                                <option value="saint-petersburg">Санкт-Петербург</option>
-                                <option value="novosibirsk">Новосибирск</option>
-                                <option value="ekaterinburg">Екатеринбург</option>
-                            </select>
-                        </div>
                         <div class="nav-full__item">
                             <a class="nav-full__link" href="">О компании</a>
                             <a class="nav-full__link" href="">Документы</a>
@@ -152,29 +136,25 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 d-flex d-lg-none justify-content-center flex-column">
+            <div class="col-lg-6 d-flex d-lg-none justify-content-center">
                 <picture>
-                    <img class="section-combined__img" src="images/dist/combined/transportation-truck.png" srcset="images/dist/combined/transportation-truck.png 1x, images/dist/combined/transportation-truck2.png 2x" alt="Грузовик">
+                    <source srcset="images/dist/combined/transportation-truck.png 1x, images/dist/combined/transportation-truck@2x.png 2x" type="image/jpeg" media="(min-width: 576px)">
+                    <source srcset="images/dist/combined/transportation-truck-mob.png 1x, images/dist/combined/transportation-truck-mob@2x.png 2x" type="image/jpeg">
+
+                    <img class="section-combined__img" src="images/dist/combined/transportation-truck.png" srcset="images/dist/combined/transportation-truck.png 1x, images/dist/combined/transportation-truck@2x.png 2x" alt="Грузовик">
                 </picture>
             </div>
             <div class="col-12">
-                <form class="form section-combined__form">
-                    <div>
-                        <div class="form__title">Калькулятор грузоперевозки</div>
-                        <div class="form__subtitle">Для расчета стоимости и срока перевозки укажите параметры</div>
-                    </div>
-                    <div class="form-search">
-                        <input type="text" name="" placeholder="Откуда" class="form-search__input form__input">
-                        <button class="form-search__btn form__btn">
-                            <span class="form__btn-icon">
-                                <svg class="">
-                                    <use xlink:href="images/dist/sprite.svg#arrow"></use>
-                                </svg>
-                            </span>
-                        </button>
-                        <input type="text" name="" placeholder="Куда" class="form-search__input form__input">
-                    </div>
-                </form>
+                <form class="form form--min">
+    <div>
+        <div class="form__title">Калькулятор грузоперевозки</div>
+        <div class="form__subtitle">Для расчета стоимости и срока перевозки укажите параметры</div>
+    </div>
+    <div class="form-search">
+        <input type="text" name="" placeholder="Куда" class="form-search__input form__input">
+        <button class="form--min__btn button">Рассчитать</button>
+    </div>
+</form>
             </div>
         </div>
     </div>
@@ -192,10 +172,13 @@
                     машине, занятое под груз.
                 </div>
             </div>
-            <div class="col-lg-6 d-flex d-lg-none justify-content-center flex-column">
+            <div class="col-lg-6 d-flex d-lg-none justify-content-center">
                 <picture>
-                    <source srcset="images/dist/combined/open-container.webp 1x, images/dist/combined/open-container2.webp 2x" type="image/webp">
-                    <img class="section-combined__img" src="images/dist/combined/open-container.png" srcset="images/dist/combined/open-container.png 1x, images/dist/combined/open-container2.png 2x" alt="Контейнер">
+                    <source srcset="images/dist/combined/open-container.webp 1x, images/dist/combined/open-container@2x.webp 2x" type="image/webp" media="(min-width: 576px)">
+                    <source srcset="images/dist/combined/open-container.jpg 1x, images/dist/combined/open-container@2x.jpg 2x" type="image/jpeg" media="(min-width: 576px)">
+                    <source srcset="images/dist/combined/open-container-mob.webp 1x, images/dist/combined/open-container-mob@2x.webp 2x" type="image/webp">
+                    <source srcset="images/dist/combined/open-container-mob.jpg 1x, images/dist/combined/open-container-mob@2x.jpg 2x" type="image/jpeg">
+                    <img class="section-combined__img" src="images/dist/combined/open-container.jpg" srcset="images/dist/combined/open-container.jpg 1x, images/dist/combined/open-container@2x.jpg 2x" alt="Контейнер">
                 </picture>
             </div>
         </div>
@@ -276,8 +259,6 @@
         </div>
     </div>
 </section>
-
-
 <section class="section-shipping padding">
     <div class="container">
         <div class="row">
@@ -290,10 +271,10 @@
             <div class="col-lg-7 col-xl-8">
                 <div class="section-shipping__subtitle">Цены на перевозку сборных грузов зависят от нескольких условий:</div>
                 <div class="section-shipping-buttons">
-                    <button class="button section-shipping-buttons__btn">Расстояния, маршрута и времени перевозки</button>
-                    <button class="button section-shipping-buttons__btn">Типа транспортного средства.</button>
-                    <button class="button section-shipping-buttons__btn">Параметров транспортировки (габариты, и вес отправления)</button>
-                    <button class="button section-shipping-buttons__btn">Условий перевозки и наличия дополнительных услуг. </button>
+                    <button class="button section-shipping-buttons__btn" aria-label="Расстояния">Расстояния, маршрута и времени перевозки</button>
+                    <button class="button section-shipping-buttons__btn" aria-label="Тип транспортного средства">Типа транспортного средства.</button>
+                    <button class="button section-shipping-buttons__btn" aria-label="Параметры транспортировки">Параметров транспортировки (габариты, и вес отправления)</button>
+                    <button class="button section-shipping-buttons__btn" aria-label="Условия перевозки">Условий перевозки и наличия дополнительных услуг. </button>
                 </div>
                 <div class="section-shipping__text">Например, при отправке товаров, на которые нельзя ничего поставить сверху или штабелировать, производится жесткая обрешетка, или клиент доплачивает за неиспользуемое пространство.</div>
             </div>
@@ -314,13 +295,14 @@
             <div class="col-12">
                 <form class="form section-price-calc__form form-search">
                     <input type="text" name="" placeholder="Ваш номер телефона" class="form-search-input__num">
-                    <button class="button form-search-input__btn" type="submit">Получить расчет стоимости</button>
+                    <button class="button form-search-input__btn" type="submit" aria-label="Получить расчет стоимости">Получить расчет стоимости</button>
                 </form>
             </div>
-            <div class="col-lg-6 d-flex d-lg-none justify-content-center flex-column">
+            <div class="col-lg-6 d-flex d-lg-none justify-content-center">
                 <picture>
-                    <img class="section-combined__img" src="images/dist/combined/front-container.png"
-                         srcset="images/dist/combined/front-container.png 1x,images/dist/combined/front-container2.png 2x" alt="Открытый контейнер">
+                    <source srcset="images/dist/combined/front-container.png 1x, images/dist/combined/front-container@2x.png 2x" type="image/png" media="(min-width: 576px)">
+                    <source srcset="images/dist/combined/front-container-mob.png 1x, images/dist/combined/front-container-mob@2x.png 2x" type="image/png">
+                    <img class="section-combined__img" src="images/dist/combined/front-container.png" srcset="images/dist/combined/front-container.png 1x,images/dist/combined/front-container@2x.png 2x" alt="Открытый контейнер">
                 </picture>
             </div>
         </div>
@@ -377,7 +359,7 @@
         </div>
         <div>
             <img src="images/dist/combined/card-car1.png" alt="" class="card-car__img">
-            <button class="button card-car__btn">Заказать перевозку</button>
+            <button class="button card-car__btn" aria-label="Заказать перевозку">Заказать перевозку</button>
         </div>
     </div>
 </div>
@@ -426,7 +408,7 @@
         </div>
         <div>
             <img src="images/dist/combined/card-car1.png" alt="" class="card-car__img">
-            <button class="button card-car__btn">Заказать перевозку</button>
+            <button class="button card-car__btn" aria-label="Заказать перевозку">Заказать перевозку</button>
         </div>
     </div>
 </div>
@@ -475,7 +457,7 @@
         </div>
         <div>
             <img src="images/dist/combined/card-car1.png" alt="" class="card-car__img">
-            <button class="button card-car__btn">Заказать перевозку</button>
+            <button class="button card-car__btn" aria-label="Заказать перевозку">Заказать перевозку</button>
         </div>
     </div>
 </div>
@@ -524,7 +506,7 @@
         </div>
         <div>
             <img src="images/dist/combined/card-car1.png" alt="" class="card-car__img">
-            <button class="button card-car__btn">Заказать перевозку</button>
+            <button class="button card-car__btn" aria-label="Заказать перевозку">Заказать перевозку</button>
         </div>
     </div>
 </div>
@@ -551,14 +533,14 @@
         </div>
     </div>
     <form action="" class="main-form__form">
-        <label for="name" class="form__label">
+        <label for="name" class="main-form__label">
             <input type="text" id="name" name="name" class="main-form__input form__input form__input--default" placeholder="Ваше имя">
         </label>
-        <label for="tel" class="form__label">
+        <label for="tel" class="main-form__label">
             <input type="tel" id="tel" name="tel" class="main-form__input form__input form__input--default" placeholder="Номер телефона">
         </label>
         <div class="main-form__captcha">капча</div>
-        <button class="main-form__btn button button--large" type="submit">Отправить</button>
+        <button class="main-form__btn button button--large" type="submit" aria-label="Отправить">Отправить</button>
         <div class="main-form__politic">Нажимая кнопку «Отправить», я соглашаюсь с условиями <a href="">Политики конфиденциальности</a></div>
     </form>
 </div>
@@ -583,10 +565,10 @@
                         <li class="footer__nav-item"><a href="">Тарифы</a></li>
                         <li class="footer__nav-item"><a href="">Автопарк</a></li>
                     </ul>
-                    <button class="button footer__btn">
+                    <button class="button footer__btn" aria-label="Задать вопрос">
                         <span class="button__icon">
                             <svg class="">
-                                <use xlink:href="images/dist/sprite.svg#letter"></use>
+                                <use xlink:href="images/dist/sprite.svg#message"></use>
                             </svg>
                         </span>
                         Задать вопрос
@@ -652,12 +634,17 @@
                 </div>
                 <div class="footer__bottom">
                     <div>
-                        Татарстан, г. Набережные Челны, 27 комплекс, ул. Галиаскара Камала, 18А, оф. 5, пом.2 <br>
-                        &copy;2023. Официальный сайт транспортной компании Быстрая логистика
+                        426003, Ижевск, Пойма, дом № 11, литер А, офис 102 <br>
+                        &copy;2023. Официальный сайт транспортной компании Азимут
                     </div>
-                    <a href="">
-                        Политика конфиденциальности
-                    </a>
+                    <div class="d-sm-flex">
+                        <div class="mt-3 mt-sm-0 ms-sm-2">
+                            ИНН 1841082966
+                        </div>
+                        <a href="">
+                            Политика конфиденциальности
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -717,7 +704,7 @@
                         </label>
                         <div class="form-politics">
                             <div class="form-politics__text">Нажимая кнопку «Отправить», я соглашаюсь с условиями Политики конфиденциальности</div>
-                            <button class="button form-politics__btn">заказать</button>
+                            <button class="button form-politics__btn" aria-label="Заказать">заказать</button>
                         </div>
                     </form>
                 </div>

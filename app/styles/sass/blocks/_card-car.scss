@@ -1,0 +1,93 @@
+.card-car {
+  background: $card-car-bg;
+  padding: 38px 17px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 41px;
+  @include sm-block {
+    padding: 38px 17px 28px 47px;
+  }
+
+  &__wrap {
+    @include sm-block{
+      display: flex;
+      justify-content: space-between;
+    }
+    @include md-block {
+      display: block;
+    }
+    @include lg-block {
+      display: flex;
+    }
+
+  }
+
+  &__title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  &__content {
+    max-width: 130px;
+  }
+
+  &__price-title {
+    color: $card-car-price-title;
+    margin-top: 27px;
+  }
+
+  &__price {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    margin-bottom: 26px;
+
+    span {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+
+  &__info-title {
+    color: $card-car-price-title;
+    font-size: 12px;
+    line-height: 15.5px;
+  }
+
+  &__info {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    margin-bottom: 8px;
+  }
+
+  &__btn {
+    z-index: 1;
+    padding: 14px 5px;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0 auto;
+    @include sm-block {
+      position: absolute;
+      bottom: 28px;
+      right: 36px;
+    }
+    @include md-block {
+      position: static;
+      margin: 0 auto;
+    }
+    @include lg-block {
+      position: absolute;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 295px;
+    margin: 0 auto;
+  }
+}

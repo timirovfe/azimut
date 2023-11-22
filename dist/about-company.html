@@ -25,14 +25,6 @@
             </a>
             <div class="header-menu">
                 <div class="nav-full__item">
-                    <select class="select">
-                        <option value="moscow">Набережные Челны</option>
-                        <option value="saint-petersburg">Санкт-Петербург</option>
-                        <option value="novosibirsk">Новосибирск</option>
-                        <option value="ekaterinburg">Екатеринбург</option>
-                    </select>
-                </div>
-                <div class="nav-full__item">
                     <a class="nav-full__link" href="">О компании</a>
                     <a class="nav-full__link" href="">Документы</a>
                     <a class="nav-full__link" href="">Филиалы</a>
@@ -53,14 +45,6 @@
             <div class="nav-full js-nav-full">
                 <div class="nav-full__inner">
                     <div class="nav-full__list">
-                        <div class="nav-full__item">
-                            <select class="nav-full__select select">
-                                <option value="moscow">Набережные Челны</option>
-                                <option value="saint-petersburg">Санкт-Петербург</option>
-                                <option value="novosibirsk">Новосибирск</option>
-                                <option value="ekaterinburg">Екатеринбург</option>
-                            </select>
-                        </div>
                         <div class="nav-full__item">
                             <a class="nav-full__link" href="">О компании</a>
                             <a class="nav-full__link" href="">Документы</a>
@@ -138,7 +122,6 @@
     </div>
 </header>
 
-
 <section class="section-company padding">
     <div class="container">
         <div class="row">
@@ -152,8 +135,12 @@
                 <p>На сегодняшний день транспортная компания ООО «Быстрая Логистика» работает по всем регионам страны и готова предоставить грузовой транспорт для любых грузов. За годы работы мы наработали колоссальный опыт и разработали собственную систему организации грузоперевозок в кратчайшие сроки. Нашими постоянными клиентами уже стали крупные государственные предприятия, заводы, производства, которые уверены в нашем профессионализме и
                     качестве предоставляемых услуг.</p>
             </div>
-            <div class="col-lg-6 d-flex d-lg-none justify-content-center flex-column">
-                    <img class="section__bg-img" src="images/dist/about-company/about-truck.png" srcset="images/dist/about-company/about-truck.png 1x, images/dist/about-company/about-truck2.png 2x" alt="Грузовик">
+            <div class="col-lg-6 d-flex d-lg-none justify-content-center">
+                <picture>
+                    <source srcset="images/dist/about-company/about-truck.png 1x, images/dist/about-company/about-truck@2x.png 2x" type="image/png" media="(min-width: 576px)">
+                    <source srcset="images/dist/about-company/about-truck-mob.png 1x, images/dist/about-company/about-truck-mob@2x.png 2x" type="image/png">
+                    <img class="section__bg-img" src="images/dist/about-company/about-truck.png" srcset="images/dist/about-company/about-truck.png 1x, images/dist/about-company/about-truck@2x.png 2x" alt="Грузовик">
+                </picture>
             </div>
         </div>
     </div>
@@ -165,10 +152,13 @@
                 <h2 class="title-margin">Наши услуги</h2>
                 <p>Транспортная компания ООО «Быстрая Логистика» за короткий промежуток времени смогла освоить все виды услуг грузоперевозки автотранспортом на различные расстояния. Ежедневно наша компания отправляет от 80 до 120 грузов по всем маршрутам страны. Автопарк компании включает в себя более 100 единиц современной грузовой техники, начиная от ГАЗелей, заканчивая 20 тонными фурами, сцепками и тралами. Наши клиенты могут решить несколько задач одновременно, просто обратившись к нам. Готовы предоставить все сопутствующие логистические услуги: страхование, хранение, предоставление спецтехники, такелажные работы, упаковка и маркировка груза, оформление всей документации и прочее. Весь процесс грузоперевозки транспортная компания ООО «Быстрая Логистика» берет на себя!</p>
             </div>
-            <div class="col-lg-6 d-flex d-lg-none justify-content-center flex-column">
+            <div class="col-lg-6 d-flex d-lg-none justify-content-center">
                 <picture>
-                    <source srcset="images/dist/about-company/about-service.webp 1x, images/dist/about-company/about-service.webp 2x" type="image/webp">
-                    <img class="section__bg-img" src="images/dist/about-company/about-service.png" srcset="images/dist/about-company/about-service.png 1x, images/dist/about-company/about-service2.png 2x" alt="Карта">
+                    <source srcset="images/dist/about-company/about-service.webp 1x, images/dist/about-company/about-service@2x.webp 2x" type="image/webp" media="(min-width: 576px)">
+                    <source srcset="images/dist/about-company/about-service.jpg 1x, images/dist/about-company/about-service@2x.jpg 2x" type="image/jpeg" media="(min-width: 576px)">
+                    <source srcset="images/dist/about-company/about-service-mob.webp 1x, images/dist/about-company/about-service-mob@2x.webp 2x" type="image/webp">
+                    <source srcset="images/dist/about-company/about-service-mob.jpg 1x, images/dist/about-company/about-service-mob@2x.jpg 2x" type="image/jpeg">
+                    <img class="section__bg-img" src="images/dist/about-company/about-service.jpg" srcset="images/dist/about-company/about-service.jpg 1x, images/dist/about-company/about-service@2x.jpg 2x" alt="Карта">
                 </picture>
             </div>
         </div>
@@ -252,10 +242,10 @@
                         <li class="footer__nav-item"><a href="">Тарифы</a></li>
                         <li class="footer__nav-item"><a href="">Автопарк</a></li>
                     </ul>
-                    <button class="button footer__btn">
+                    <button class="button footer__btn" aria-label="Задать вопрос">
                         <span class="button__icon">
                             <svg class="">
-                                <use xlink:href="images/dist/sprite.svg#letter"></use>
+                                <use xlink:href="images/dist/sprite.svg#message"></use>
                             </svg>
                         </span>
                         Задать вопрос
@@ -321,12 +311,17 @@
                 </div>
                 <div class="footer__bottom">
                     <div>
-                        Татарстан, г. Набережные Челны, 27 комплекс, ул. Галиаскара Камала, 18А, оф. 5, пом.2 <br>
-                        &copy;2023. Официальный сайт транспортной компании Быстрая логистика
+                        426003, Ижевск, Пойма, дом № 11, литер А, офис 102 <br>
+                        &copy;2023. Официальный сайт транспортной компании Азимут
                     </div>
-                    <a href="">
-                        Политика конфиденциальности
-                    </a>
+                    <div class="d-sm-flex">
+                        <div class="mt-3 mt-sm-0 ms-sm-2">
+                            ИНН 1841082966
+                        </div>
+                        <a href="">
+                            Политика конфиденциальности
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -386,7 +381,7 @@
                         </label>
                         <div class="form-politics">
                             <div class="form-politics__text">Нажимая кнопку «Отправить», я соглашаюсь с условиями Политики конфиденциальности</div>
-                            <button class="button form-politics__btn">заказать</button>
+                            <button class="button form-politics__btn" aria-label="Заказать">заказать</button>
                         </div>
                     </form>
                 </div>

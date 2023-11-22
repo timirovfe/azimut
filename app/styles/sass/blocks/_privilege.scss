@@ -1,0 +1,22 @@
+.privilege-wrap {
+  margin-top: 33px;
+  border-radius: 5.5px;
+  background: linear-gradient(180deg, $button-gradient-first 0%, $button-gradient-second 100%);
+  box-shadow: 0 48.36207px 48.36207px 0 rgba(0, 0, 0, 0.09);
+  color: $white;
+  padding: 29px 15px;
+  @include sm-block {
+    max-width: 294px;
+    min-height: 233px;
+  }
+  &__title {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25.5px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 8.5px;
+  }
+}

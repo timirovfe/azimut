@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Азимут</title>
+    <link href="css/app.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- класс header--grey для серого хедера-->
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="#" class="header-logo">
+                <img src="images/dist/logo_azimut.png" alt="logo">
+                <div class="logo-title">
+                    <div class="logo-title__text">Азимут</div>
+                    <div class="logo-title__descr">Траспортная компания</div>
+                </div>
+            </a>
+            <div class="header-menu">
+                <div class="nav-full__item">
+                    <a class="nav-full__link" href="">О компании</a>
+                    <a class="nav-full__link" href="">Документы</a>
+                    <a class="nav-full__link" href="">Филиалы</a>
+                    <a class="nav-full__link" href="">Перевозки</a>
+                    <a class="nav-full__link" href="">Направления</a>
+                    <a class="nav-full__link" href="">Сопутствующие услуги</a>
+                </div>
+                <div class="header-contacts__mobile">
+                    <a class="header-contacts__phone" href="tel:+78552783288">+7 855 278-32-88</a>
+                    <a class="header-contacts__phone" href="tel:+79276776880">+7 927 677-68-80</a>
+                </div>
+            </div>
+            <div class="nav-full__toggle js-nav-full__toggle">
+                <div class="nav-full__toggle-line"></div>
+                <div class="nav-full__toggle-line"></div>
+                <div class="nav-full__toggle-line"></div>
+            </div>
+            <div class="nav-full js-nav-full">
+                <div class="nav-full__inner">
+                    <div class="nav-full__list">
+                        <div class="nav-full__item">
+                            <a class="nav-full__link" href="">О компании</a>
+                            <a class="nav-full__link" href="">Документы</a>
+                            <a class="nav-full__link" href="">Филиалы</a>
+                            <a class="nav-full__link" href="">Перевозки</a>
+                            <a class="nav-full__link" href="">Направления</a>
+                            <a class="nav-full__link" href="">Сопутствующие услуги</a>
+                        </div>
+                        <div class="header-contacts__mobile">
+                            <a class="header-contacts__phone" href="tel:+78552783288">+7 855 278-32-88</a>
+                            <a class="header-contacts__phone" href="tel:+79276776880">+7 927 677-68-80</a>
+                        </div>
+                        <div class="delivery-buttons">
+                            <button class="button delivery-buttons__button">
+                                <span class="button__icon">
+                                    <svg class="">
+                                        <use xlink:href="images/dist/sprite.svg#letter"></use>
+                                    </svg>
+                                </span>
+                                Оформить заказ
+                            </button>
+                            <a class="button delivery-buttons__button" href="#modal-order" data-toggle="modal">
+                                <span class="button__icon">
+                                    <svg class="">
+                                        <use xlink:href="images/dist/sprite.svg#message"></use>
+                                    </svg>
+                                </span>
+                                Есть вопрос?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-wrap">
+                        <ul class="breadcrumbs-inner">
+                            <li class="breadcrumbs-inner__item">
+                                <a href="/" class="breadcrumbs-inner__link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="breadcrumbs-inner__item">
+                                <a href="/" class="breadcrumbs-inner__link">
+                                    О компании
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="delivery-buttons">
+                            <button class="button delivery-buttons__button">
+                                <span class="button__icon">
+                                    <svg class="">
+                                        <use xlink:href="images/dist/sprite.svg#letter"></use>
+                                    </svg>
+                                </span>
+                                Оформить заказ
+                            </button>
+                            <a class="button delivery-buttons__button" href="#modal-order" data-toggle="modal">
+                                <span class="button__icon">
+                                    <svg class="">
+                                        <use xlink:href="images/dist/sprite.svg#message"></use>
+                                    </svg>
+                                </span>
+                                Есть вопрос?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="section-article padding padding--top">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="section-article__title title-margin">Статьи</h1>
+            </div>
+            <div class="col-12 col-xl-6">
+                <a href="" class="section-article-wrap">
+                    <div class="section-article-wrap__img">
+                        <img src="images/dist/article/article1.jpg" alt="Заголовок статьи">
+                    </div>
+                    <div class="section-article-wrap-box">
+                        <div class="section-article-wrap-box__date">02.10.2023</div>
+                        <div class="section-article-wrap-box__title">Заголовок статьи</div>
+                        <div class="section-article-wrap-box__descr">Абзац текста из новости на несколько сторк,
+                            описывающий смысл статьи и обсуждаемые вопросы
+                        </div>
+                        <button class="section-article-wrap-box__more">Подробнее
+                            <svg class="section-article-wrap-box__icon">
+                                <use xlink:href="images/dist/sprite.svg#art__arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-xl-6">
+                <a href="" class="section-article-wrap">
+                    <div class="section-article-wrap__img">
+                        <img src="images/dist/article/article2.jpg" alt="Заголовок статьи">
+                    </div>
+                    <div class="section-article-wrap-box">
+                        <div class="section-article-wrap-box__date">02.10.2023</div>
+                        <div class="section-article-wrap-box__title">Заголовок статьи</div>
+                        <div class="section-article-wrap-box__descr">Абзац текста из новости на несколько сторк,
+                            описывающий смысл статьи и обсуждаемые вопросы
+                        </div>
+                        <button class="section-article-wrap-box__more">Подробнее
+                            <svg class="section-article-wrap-box__icon">
+                                <use xlink:href="images/dist/sprite.svg#art__arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-xl-6">
+                <a href="" class="section-article-wrap">
+                    <div class="section-article-wrap__img">
+                        <img src="images/dist/article/article3.jpg" alt="Заголовок статьи">
+                    </div>
+                    <div class="section-article-wrap-box">
+                        <div class="section-article-wrap-box__date">02.10.2023</div>
+                        <div class="section-article-wrap-box__title">Заголовок статьи</div>
+                        <div class="section-article-wrap-box__descr">Абзац текста из новости на несколько сторк,
+                            описывающий смысл статьи и обсуждаемые вопросы
+                        </div>
+                        <button class="section-article-wrap-box__more">Подробнее
+                            <svg class="section-article-wrap-box__icon">
+                                <use xlink:href="images/dist/sprite.svg#art__arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-xl-6">
+                <a href="" class="section-article-wrap">
+                    <div class="section-article-wrap__img">
+                        <img src="images/dist/article/article4.jpg" alt="Заголовок статьи">
+                    </div>
+                    <div class="section-article-wrap-box">
+                        <div class="section-article-wrap-box__date">02.10.2023</div>
+                        <div class="section-article-wrap-box__title">Заголовок статьи</div>
+                        <div class="section-article-wrap-box__descr">Абзац текста из новости на несколько сторк,
+                            описывающий смысл статьи и обсуждаемые вопросы
+                        </div>
+                        <button class="section-article-wrap-box__more">Подробнее
+                            <svg class="section-article-wrap-box__icon">
+                                <use xlink:href="images/dist/sprite.svg#art__arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-xl-6">
+                <a href="" class="section-article-wrap">
+                    <div class="section-article-wrap__img">
+                        <img src="images/dist/article/article1.jpg" alt="Заголовок статьи">
+                    </div>
+                    <div class="section-article-wrap-box">
+                        <div class="section-article-wrap-box__date">02.10.2023</div>
+                        <div class="section-article-wrap-box__title">Заголовок статьи</div>
+                        <div class="section-article-wrap-box__descr">Абзац текста из новости на несколько сторк,
+                            описывающий смысл статьи и обсуждаемые вопросы
+                        </div>
+                        <button class="section-article-wrap-box__more">Подробнее
+                            <svg class="section-article-wrap-box__icon">
+                                <use xlink:href="images/dist/sprite.svg#art__arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-xl-6">
+                <a href="" class="section-article-wrap">
+                    <div class="section-article-wrap__img">
+                        <img src="images/dist/article/article2.jpg" alt="Заголовок статьи">
+                    </div>
+                    <div class="section-article-wrap-box">
+                        <div class="section-article-wrap-box__date">02.10.2023</div>
+                        <div class="section-article-wrap-box__title">Заголовок статьи</div>
+                        <div class="section-article-wrap-box__descr">Абзац текста из новости на несколько сторк,
+                            описывающий смысл статьи и обсуждаемые вопросы
+                        </div>
+                        <button class="section-article-wrap-box__more">Подробнее
+                            <svg class="section-article-wrap-box__icon">
+                                <use xlink:href="images/dist/sprite.svg#art__arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-xl-6">
+                <a href="" class="section-article-wrap">
+                    <div class="section-article-wrap__img">
+                        <img src="images/dist/article/article3.jpg" alt="Заголовок статьи">
+                    </div>
+                    <div class="section-article-wrap-box">
+                        <div class="section-article-wrap-box__date">02.10.2023</div>
+                        <div class="section-article-wrap-box__title">Заголовок статьи</div>
+                        <div class="section-article-wrap-box__descr">Абзац текста из новости на несколько сторк,
+                            описывающий смысл статьи и обсуждаемые вопросы
+                        </div>
+                        <button class="section-article-wrap-box__more">Подробнее
+                            <svg class="section-article-wrap-box__icon">
+                                <use xlink:href="images/dist/sprite.svg#art__arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-xl-6">
+                <a href="" class="section-article-wrap">
+                    <div class="section-article-wrap__img">
+                        <img src="images/dist/article/article4.jpg" alt="Заголовок статьи">
+                    </div>
+                    <div class="section-article-wrap-box">
+                        <div class="section-article-wrap-box__date">02.10.2023</div>
+                        <div class="section-article-wrap-box__title">Заголовок статьи</div>
+                        <div class="section-article-wrap-box__descr">Абзац текста из новости на несколько сторк,
+                            описывающий смысл статьи и обсуждаемые вопросы
+                        </div>
+                        <button class="section-article-wrap-box__more">Подробнее
+                            <svg class="section-article-wrap-box__icon">
+                                <use xlink:href="images/dist/sprite.svg#art__arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12">
+                <ul class="pagination">
+                    <li>
+                        <a class="pagination-list pagination-list__prev"
+                           href="">
+                            <svg>
+                                <use xlink:href="images/dist/sprite.svg#less"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="pagination-list active" href="">
+                            1
+                        </a>
+                    </li>
+                    <li>
+                        <a class="pagination-list" href="">2</a>
+                    </li>
+                    <li>
+                        <a class="pagination-list" href="">3</a>
+                    </li>
+                    <li>
+                        <a class="pagination-list" href="">4</a>
+                    </li>
+                    <li>
+                        <a class="pagination-list" href="">5</a>
+                    </li>
+                    <li>
+                        <span class="not-act ellipsis-link">...</span>
+                    </li>
+                    <li>
+                        <a class="pagination-list" href="">6</a>
+                    </li>
+                    <li>
+                        <a class="pagination-list pagination-list__next" href="">
+                            <svg>
+                                <use xlink:href="images/dist/sprite.svg#more"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer__top">
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><a href="">О компании</a></li>
+                        <li class="footer__nav-item"><a href="">Документы</a></li>
+                        <li class="footer__nav-item"><a href="">Филиалы</a></li>
+                        <li class="footer__nav-item"><a href="">Тарифы</a></li>
+                        <li class="footer__nav-item"><a href="">Автопарк</a></li>
+                    </ul>
+                    <button class="button footer__btn" aria-label="Задать вопрос">
+                        <span class="button__icon">
+                            <svg class="">
+                                <use xlink:href="images/dist/sprite.svg#message"></use>
+                            </svg>
+                        </span>
+                        Задать вопрос
+                    </button>
+                </div>
+                <div class="footer__center">
+                    <div class="footer-contacts">
+                        <div class="footer-contacts__logo">
+                            Быстрая
+                            логистика
+                        </div>
+                        <div>
+                            <a href="tel+79276776880" class="footer-contacts__tel">+7 927 677-68-80</a>
+                        </div>
+                        <div>
+                            <a href="tel+78552783288" class="footer-contacts__tel">+7 855 278-32-88</a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-links__block">
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Перевозки</a>
+                                <a href="" class="footer-links__item">Крупногабаритные перевозки</a>
+                                <a href="" class="footer-links__item">Перевозка негабаритных грузов</a>
+                                <a href="" class="footer-links__item">Квартирный домашний и военный переезд по России</a>
+                                <a href="" class="footer-links__item">Перевозка продуктов питания</a>
+                                <a href="" class="footer-links__item">Доставка в торговые сети</a>
+                                <a href="" class="footer-links__item">Перевозка сборных грузов</a>
+                                <a href="" class="footer-links__item">Военные переезды в другой город</a>
+                            </div>
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">О компании</a>
+                            </div>
+                        </div>
+                        <div class="footer-links__block">
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Направления</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Казахстан</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Армению</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Беларусь</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Узбекистан</a>
+                                <a href="" class="footer-links__item">Грузоперевозки в Кыргызстан</a>
+                                <a href="" class="footer-links__item">Грузоперевозки по России</a>
+                                <a href="" class="footer-links__item">Грузоперевозки из Китая</a>
+                            </div>
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Документы</a>
+                            </div>
+                        </div>
+                        <div class="footer-links__block">
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Сопутствующие услуги</a>
+                                <a href="" class="footer-links__item">Упаковка грузов</a>
+                                <a href="" class="footer-links__item">Страхование груза</a>
+                                <a href="" class="footer-links__item">Услуги грузчиков</a>
+                                <a href="" class="footer-links__item">Услуги спецтехники</a>
+                            </div>
+                            <div class="footer-links__wrap">
+                                <a href="" class="footer-links__title">Филиалы</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div>
+                        426003, Ижевск, Пойма, дом № 11, литер А, офис 102 <br>
+                        &copy;2023. Официальный сайт транспортной компании Азимут
+                    </div>
+                    <div class="d-sm-flex">
+                        <div class="mt-3 mt-sm-0 ms-sm-2">
+                            ИНН 1841082966
+                        </div>
+                        <a href="">
+                            Политика конфиденциальности
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="modal-order">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-close" data-dismiss="modal">
+                <svg class="form-modal-direction__close">
+                    <use xlink:href="images/dist/sprite.svg#close"></use>
+                </svg>
+            </div>
+            <div class="form-modal">
+                <h2 class="form-modal__title">Заказать грузоперевозку</h2>
+                <div class="form-modal-direction">
+                    <div class="form-modal-direction__city">Санкт-Петербург</div>
+                    <svg class="form-modal-direction__img d-none d-md-flex">
+                        <use xlink:href="images/dist/sprite.svg#geo"></use>
+                    </svg>
+
+                    <svg class="triangle-more d-flex d-md-none">
+                        <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                    </svg>
+
+                    <svg class="form-modal-direction__arrow d-none d-md-flex">
+                        <use xlink:href="images/dist/sprite.svg#modal-arrow"></use>
+                    </svg>
+
+                    <svg class="form-modal-direction__img d-none d-md-flex">
+                        <use xlink:href="images/dist/sprite.svg#geo"></use>
+                    </svg>
+
+                    <div class="form-modal-direction__city">Набережные Челны</div>
+                </div>
+                <div class="form-modal-content">
+                    <div class="form-modal-content__price">5 суток <span>-</span> 2 596 руб.</div>
+                    <div class="form-modal-content__descr">
+                        <span>Прямая грузоперевозка</span>  одна машина без перегрузки между машинами и складами
+                    </div>
+                    <form action="" class="form-modal-main">
+                        <label for="surname" class="form__label main-form__label">
+                            <input type="text" id="surname" name="surname" class="form-modal-main__input form__input form__input--default" placeholder="Фамилия">
+                        </label>
+                        <label for="name" class="form__label main-form__label">
+                            <input type="text" id="name" name="name" class="form-modal-main__input form__input form__input--default" placeholder="Имя">
+                        </label>
+                        <label for="patronymic" class="form__label main-form__label">
+                            <input type="text" id="patronymic" name="patronymic" class="form-modal-main__input form__input form__input--default" placeholder="Отчество">
+                        </label>
+                        <label for="tel" class="form__label main-form__label">
+                            <input type="tel" id="tel" name="tel" class="form-modal-main__input form__input form__input--default" placeholder="Номер телефона">
+                        </label>
+                        <label for="email" class="form__label main-form__label">
+                            <input type="email" id="email" name="email" class="form-modal-main__input form__input form__input--default" placeholder="E-mail">
+                        </label>
+                        <div class="form-politics">
+                            <div class="form-politics__text">Нажимая кнопку «Отправить», я соглашаюсь с условиями Политики конфиденциальности</div>
+                            <button class="button form-politics__btn" aria-label="Заказать">заказать</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="gulp-js/app.js"></script>
+<script src="gulp-js/modal.js"></script>
+</body>
+</html>
